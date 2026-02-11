@@ -1,0 +1,5 @@
+- [x] Remove lovable-tagger from vite.config.ts
+- [x] Remove lovable-tagger from package.json
+- [x] Rewrite README.md for ESM project
+- [x] Add favicon link to logo.png in index.html
+- [x] Run npm install to update dependencies
