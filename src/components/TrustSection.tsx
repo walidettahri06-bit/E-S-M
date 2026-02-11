@@ -67,9 +67,13 @@ const TrustSection = () => {
               {[...clients, ...clients].map((client, i) => (
                 <div
                   key={`${client}-${i}`}
-                  className="flex-shrink-0 px-6 py-3 glass rounded-lg font-heading text-sm font-medium text-muted-foreground hover:text-foreground hover:border-primary/20 transition-colors"
+                  className="flex-shrink-0 px-6 py-3 glass rounded-lg hover:border-primary/20 transition-colors flex items-center justify-center"
                 >
-                  {client}
+                  <img
+                    src={`/logo-${String((i % clients.length) + 1).padStart(2, '0')}.svg`}
+                    alt={client}
+                    className="h-8 w-auto max-w-full"
+                  />
                 </div>
               ))}
             </motion.div>
